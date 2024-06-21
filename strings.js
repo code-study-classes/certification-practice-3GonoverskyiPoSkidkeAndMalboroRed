@@ -10,6 +10,7 @@ function countUppercaseLetters(str) {
   return count;
 }
 
+module.exports = countUppercaseLetters;
 // -----------------=-
 // 3
 
@@ -146,3 +147,28 @@ function extractFileName(fullFileName) {
 console.log(extractFileName('C:/Users/username/Documents/example.txt')); // 'example'
 console.log(extractFileName('../index.html')); // 'index'
 console.log(extractFileName('/home/user/images/photo.jpg')); // 'photo'
+
+//Частное при частное 10
+export function checkBrackets(str) {
+    let stack = [];
+
+    for (let char of str) {
+        if (char === '(') {
+            stack.push(char);
+        } else if (char === ')') {
+            if (stack.length === 0 || stack.pop() !== '(') {
+                return false;
+            }
+        }
+    }
+
+    return stack.length === 0;
+}
+
+// Пример использования
+const inputStringq = "((a+b)*(c-d))";
+if (checkBrackets(inputStringq)) {
+    console.log("Скобки расставлены правильно.");
+} else {
+    console.log("Скобки расставлены неправильно.");
+}

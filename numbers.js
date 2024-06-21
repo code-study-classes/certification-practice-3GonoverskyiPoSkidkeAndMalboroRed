@@ -42,7 +42,7 @@ export function swapHundredsAndTens(number) {
   const dec = Math.floor((number % 100) / 10); // получаем цифру десятков
   const ex = number % 10; // получаем цифру единиц
 
-  const swappedNumber = ex * 100 + dec * 10 + sot; // переставляем цифры
+  const swappedNumber = dec * 100 + sot * 10 + ex; // переставляем цифры
 
   return swappedNumber;
 }

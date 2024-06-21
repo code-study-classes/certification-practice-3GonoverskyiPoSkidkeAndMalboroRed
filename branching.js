@@ -179,3 +179,116 @@ console.log(describeAge(41)); // "сорок один год"
 
 
 //10
+
+
+export function describeAge(age) {
+    let description;
+
+    switch (age) {
+        case 20:
+        case 21:
+        case 22:
+        case 23:
+        case 24:
+        case 25:
+        case 26:
+        case 27:
+        case 28:
+        case 29:
+            description = age + " лет";
+            break;
+        case 30:
+        case 31:
+        case 32:
+        case 33:
+        case 34:
+        case 35:
+        case 36:
+        case 37:
+        case 38:
+        case 39:
+            description = age + " лет";
+            break;
+        case 40:
+        case 41:
+        case 42:
+        case 43:
+        case 44:
+        case 45:
+        case 46:
+        case 47:
+        case 48:
+        case 49:
+            description = age + " лет";
+            break;
+        case 50:
+        case 51:
+        case 52:
+        case 53:
+        case 54:
+        case 55:
+        case 56:
+        case 57:
+        case 58:
+        case 59:
+            description = age + " лет";
+            break;
+        case 60:
+        case 61:
+        case 62:
+        case 63:
+        case 64:
+        case 65:
+        case 66:
+        case 67:
+        case 68:
+        case 69:
+            description = age + " лет";
+            break;
+        default:
+            description = "Invalid age";
+    }
+
+    return description;
+}
+
+
+export function describeNumber2(number) {
+    let description = "";
+    
+    switch (Math.floor(number / 100)) {
+        case 1:
+            description = "Число в диапазоне 100-199";
+            break;
+        case 2:
+            description = "Число в диапазоне 200-299";
+            break;
+        case 3:
+            description = "Число в диапазоне 300-399";
+            break;
+        case 4:
+            description = "Число в диапазоне 400-499";
+            break;
+        case 5:
+            description = "Число в диапазоне 500-599";
+            break;
+        case 6:
+            description = "Число в диапазоне 600-699";
+            break;
+        case 7:
+            description = "Число в диапазоне 700-799";
+            break;
+        case 8:
+            description = "Число в диапазоне 800-899";
+            break;
+        case 9:
+            description = "Число в диапазоне 900-999";
+            break;
+        default:
+            description = "Число не входит в указанный диапазон";
+    }
+    
+    return description;
+}
+
+
